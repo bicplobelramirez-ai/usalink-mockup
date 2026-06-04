@@ -1,7 +1,15 @@
+/* USALINK APP JS */
+try {
+  document.addEventListener('DOMContentLoaded', function() {
+    var d = document.getElementById('js-debug');
+    if(d) d.style.display = 'none';
+  });
+} catch(e) {}
 
-/* ═══════════════════════════════════════════
+
+
    USALINK PWA — CLEAN JS (no nested backticks)
-═══════════════════════════════════════════ */
+
 
 /* ─── NAVIGATION ─── */
 var currentPage = 'page-home';
@@ -581,9 +589,9 @@ if(sliderEl){
 }
 document.querySelectorAll('.hs-dot').forEach(function(d,i){ d.addEventListener('click',function(){ goHeroSlide(i); }); });
 
-/* ═══════════════════════════════════════════
+
    APHRODITE AI — LOGIC
-═══════════════════════════════════════════ */
+
 var aiMode = 'shop';
 var aiHistory = [];
 var aiFloatHistory = [];
